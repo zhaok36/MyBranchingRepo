@@ -246,6 +246,13 @@ public class mathy
 
 
 	}
+	public int conflictCode(int num)
+	{
+
+		//p1
+		return 0;
+
+	}
 	public void testingbranch (int x)
 	{
 		System.out.print(x);
