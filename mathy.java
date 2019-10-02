@@ -236,7 +236,7 @@ public class mathy
 
 		int x;
 
-		for (int i = 0; i<10;i++
+		for (int i = 0; i<10;i++)
 		{
 			x = i * num;
 
@@ -246,6 +246,25 @@ public class mathy
 
 
 	}
+
+	public int conflictCode(int num)
+	{
+		//p2
+		int x = 0;
+		for(int i = 0; i<10; i++)
+		{
+			x += 2;
+			num += i*x;
+
+
+		}
+		return num;
+
+
+		//p1
+		return 0;
+	}
+
 	public void testingbranch (int x)
 	{
 		System.out.print(x);
