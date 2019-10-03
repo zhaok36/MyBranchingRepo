@@ -105,20 +105,24 @@ public class LinkedList
     }
 
     public boolean contains(Object element){
-        Node temp = first;
-        while (temp!=null){
-        if (temp.data.equals(element))
-        return true;
-        else
-        temp = temp.next;
-        }
-        return false;
-    }
+	   Node temp = first;
+
+	   while (temp!=null){
+		   if (temp.data.equals(element)){
+			   return true;
+			}
+		   else{
+			   temp = temp.next;
+		   }
+	   }
+
+	   return false;
+   }
 
     /*
     * Brandon Zhang
     * Linked list reverse method
-    
+
     public void reverse(){
         if(first == null) return;
         Node current = first;
@@ -138,12 +142,12 @@ public class LinkedList
         first = newFirst;
     }
     /**/
-    
+
     //CHAD recursive solution
     public void reverse(){
         reverse(first).next = null;
     }
-    
+
     private Node reverse(Node current){
         if(current.next == null){
             first = current;
