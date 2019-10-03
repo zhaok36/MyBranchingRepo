@@ -233,7 +233,10 @@ public class mathy
    }
 	public int foo(int num)
 	{
-		//hey ya big foo
+
+
+		//foo foo foo foo foo foo o  oo o o o o oo o ooooooooooooooooooo
+
 		int x;
 
 		for (int i = 0; i<10;i++)
